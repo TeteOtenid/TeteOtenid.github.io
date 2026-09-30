@@ -8,9 +8,21 @@
       text-align: center;
     }
     .image1 {
-      margin-left: 300px;
-      margin-top: 100px;
+	  position: relative;
+	  margin-left: 450px;
+	  margin-top:  340px;
     }
+	.image1gif {
+	  position: relative;
+	  width: 970px;
+	  opacity: 0.5;
+	}
+	.image1effect {
+	  position: absolute;
+	  width: 970px;
+	  left: 450px;
+	  bottom: 4px;
+	}
     h1 {
       color: white;
       font-family: Arial, sans-serif;
@@ -26,7 +38,12 @@
   </style>
 </head>
 <body>
-  <img class="image1" src="bg.jpg" alt="image">
+  <img  src="flowers1.gif" alt="gif">
+  <div class="image1">
+    <img class="image1gif" src="flowers1.gif" alt="gif">
+    <img class="image1effect" src="bg.jpg" alt="image">
+  </div>
+  
   <div class="overlay">
     <h1>Hi! Я Тете</h1>
     <p>Скоро здесь будет моё портфолио.</p>
